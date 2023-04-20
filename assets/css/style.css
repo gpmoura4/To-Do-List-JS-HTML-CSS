@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+:root {
+  --primary-color: #555;
+  --primary-color-darker: #101010;
+  --primary-color-true-orange: #f07020;
+  --primary-color-dark-orange: #d3641f;
+  --primary-color-orange: #f4a06c;
+  --primary-color-orange-light: #FFE6C7;
+  --primary-color-green: #5cdc5e;
+  --primary-color-dark-green: #148222;
+  --primary-color-dark-red: #821010;
+  --primary-color-red: #cf5353;
+  --primary-color-white: #fff;
+  --primary-color-black: #000;
+
+
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color-black);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 80%;
+  margin: 50px auto;
+  /* background: var(--primary-color-darker); */
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.container h1 {
+  color: var(--primary-color-true-orange);
+  font-size: 4rem;
+}
+
+.task-input {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.new-task-button {
+  padding: 0.7rem;
+  font-weight: bold;
+  background-image: linear-gradient(45deg,
+      var(--primary-color-dark-orange), var(--primary-color-orange));
+  border: none;
+  color: var(--primary-color-white);
+  border-radius: 30%;
+  transition: 200ms ease-in-out all;
+  box-shadow: -2px 2px black;
+}
+
+.new-task-button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(45deg,
+      var(--primary-color-dark-green), var(--primary-color-green));
+  transform: scale(1.07);
+}
+
+.checkbox-task {
+  width: 20px;
+  margin-right: 0.5rem;
+  border: none;
+}
+
+.checkbox-task:hover {
+  cursor: pointer;
+}
+
+.paragraph-task {
+  display: flex;
+  justify-content: space-between;
+  color: var(--primary-color-orange-light);
+  font-weight: bolder;
+}
+
+.btn-task {
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+  border: 1px none;
+  border-radius: 20%;
+  transition: 200ms ease-in-out all;
+}
+
+.btn-task:hover {
+  cursor: pointer;
+  background-image: linear-gradient(45deg,
+      var(--primary-color-dark-red), var(--primary-color-red));
+  color: var(--primary-color-white);
+  transform: scale(1.10);
+}
